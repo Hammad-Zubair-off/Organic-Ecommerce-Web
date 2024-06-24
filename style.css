@@ -1,0 +1,696 @@
+.banner {
+    display: flex;
+    background: rgba(221, 220, 220, 0.5) url(http://www.goeazyfacilities.com/wp-content/uploads/2020/04/leaves-free-img-300x237.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto;
+    padding-bottom: 100px;
+    padding-top: 150px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-attachment: scroll;
+    width: 100%;
+
+}
+
+.bannerChild1 img {
+    max-width: 100%;
+
+}
+
+.bannerChild1 {
+    max-width: 100%;
+    flex-shrink: 3;
+    margin-left: 1
+}
+
+.bannerChild2 {
+    display: flex;
+    font-family: 'Merriweather', serif;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.bannerChild2 h1 {
+    font-size: 3.25rem;
+    font-weight: bolder;
+}
+
+.bannerChild2 {
+    max-width: 49%;
+
+
+}
+
+@media screen and (max-width:921px) and (min-width:765px) {
+    .banner {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .bannerChild2 h1 {
+        font-size: 30px
+    }
+
+    .bannerChild2 h2 {
+        font-size: 15px;
+    }
+
+    .bannerChild2 {
+        width: max-content;
+    }
+
+    .bannerChild2 .button {
+        width: 150px;
+    }
+
+    .bannerChild1 img {
+        flex-shrink: 3;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .banner {
+
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: left;
+
+    }
+
+    .bannerChild2 {
+        width: cover;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .bannerChild2 h1 {
+        font-size: 30px
+    }
+
+    .bannerChild2 h2 {
+        font-size: 15px;
+    }
+
+    .bannerChild2 img {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bannerChild1 {
+        margin-top: 80px;
+
+    }
+}
+
+.button {
+
+    width: 150px;
+    height: 3.25rem;
+    border-radius: 5px;
+    background-color: #8bc34a;
+    font-size: 15px;
+    color: white;
+    border: transparent;
+    font-weight: bolder;
+    margin-top: 15px;
+    transition-property: background-color;
+    transition-duration: 1s;
+
+}
+
+button:hover {
+    background-color: #befd75;
+
+}
+
+
+
+
+.relaiabilityBanner {
+    background-color: black;
+    display: flex;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.relaiabilityBannerChild {
+    color: white;
+    background-color: rgb(49, 49, 49);
+    border-radius: 2px;
+    font-size: 10px;
+    max-width: calc(100% * 8);
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    align-items: baseline;
+    padding-right: 20px;
+    padding-left: 10px;
+
+}
+
+.Child {
+    padding: 20px;
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .relaiabilityBanner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .relaiabilityBannerChild {
+        justify-content: flex-start;
+        align-items: center;
+        width: calc(40%);
+        /* min-width:calc(50px * 2); */
+        height: 90px;
+    }
+
+    .Child {
+        min-width: 49%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .relaiabilityBanner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .relaiabilityBannerChild {
+        width: calc(80%);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+.bestSellingProduct,
+.trendingProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.bestSellingProductClass1,
+.trendingProductClass1 {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    font-size: 1rem;
+}
+
+.bestSellingProductClass2,
+.trendingProductClass2 {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+}
+
+.bestSellingProductClass2Row,
+.trendingProductClass2Row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.2px;
+}
+
+.bestSellingProductClass2Row img,
+.trendingProductClass2Row img {
+    max-width: 90%;
+    height: auto;
+}
+
+@media screen and (max-width:921px) {
+
+    .bestSellingProductClass2,
+    .trendingProductClass2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: normal;
+        flex-wrap: wrap;
+
+    }
+
+    .bestSellingProductClass2Row,
+    .trendingProductClass2Row img {
+        max-width: calc(90%);
+        height: auto;
+        flex-shrink: 2;
+    }
+}
+
+.add {
+    background-color: rgb(250, 247, 247);
+    font-family: 'Merriweather', serif;
+    background-image: url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/basil-leaf.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+.inneradd1,
+.inneradd2,
+.inneradd3 {
+    background-color: white;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    line-height: 0.5px;
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: flex-start;
+    width: calc(20%);
+    height: 200px;
+    margin: 20px;
+}
+
+.inneradd1 {
+    background-image: url(https://prodentumano-1d466.kxcdn.com/upload/thumbnail/product/2023-05-27/op-1685175100.jpg);
+}
+
+.inneradd2 {
+    background-image: url(https://onempa.com/wp-content/uploads/2023/07/Butterhead-lettuce-1024x683.jpg);
+}
+
+.inneradd3 {
+    background-image: url(https://www.cybervitamins.com/wp-content/uploads/2019/07/product03-free-img.jpg);
+}
+
+.addh1 {
+    font-size: 20px;
+    font-weight: 5px;
+}
+
+.addp {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:1023px) {
+    .add {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .inneradd1,
+    .inneradd2,
+    .inneradd3 {
+        width: 80%;
+        background-size: 150px;
+        height: 150px;
+        padding: 20px;
+
+    }
+
+}
+
+.offerBanner {
+    font-family: 'Merriweather', serif;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.offerBanner .button {
+    width: 150px
+}
+
+@media screen and (max-width:767px) {
+    .offerBanner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+.review {
+    font-family: 'Merriweather', serif;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.review::before {
+    content: "";
+    /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FEFEFD;
+    background-image: url(http://www.goeazyfacilities.com/wp-content/uploads/2020/04/leaves-free-img-300x237.png);
+    opacity: 0.2;
+    /* Adjust opacity as needed (0.5 for 50% opacity) */
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 350px;
+}
+
+.reviewClass1 {
+    text-align: center;
+
+}
+
+.reviewClass2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.reviewClass2Child1,
+.reviewClass2Child3 {
+    width: 25%;
+    padding-top: 30px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    font-size: 20px;
+    font-family: " Open Sans,sans-serif";
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.reviewClass2Child2 {
+    width: 27%;
+    height: 400px;
+    border-radius: 5px;
+    background-image: url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/sydney-rae-668606-unsplash.jpg);
+    background-position: center center;
+    text-align: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 0 rgba(40, 40, 40, .38);
+    opacity: 0.7;
+}
+
+.reviewClass2Child2 p {
+    font-size: 20px;
+    font-weight: 5px;
+}
+
+@media screen and (max-width:921px) and (min-width:761px) {
+    .reviewClass2Child2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .reviewClass2Child2 p {
+        font-size: 15px;
+    }
+}
+
+.reviewClass1 h1 {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:761px) {
+    .reviewClass2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .reviewClass2Child1,
+    .reviewClass2Child2,
+    .reviewClass2Child3 {
+        width: 90%;
+        height: 50%;
+
+    }
+
+    .reviewClass2Child2 {
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width:389px) {
+    .reviewClass2Child2 {
+        background-size: 400px;
+    }
+
+}
+
+.review {
+    padding-bottom: 100px;
+}
+
+.brandsLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 13px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.navdivChild1,
+.navdivChild {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+
+
+
+
+}
+
+.navdivChild {
+    width: 90%;
+}
+
+.navdiv {
+    width: 50%;
+
+
+}
+
+.navdiv1 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+
+}
+
+.navdivChild-Child {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    transition-property: color;
+    transition-duration: 0.5s;
+
+
+}
+
+
+.navdivChild-Child:hover {
+    color: #8bc34a;
+}
+
+.fa-bars {
+    display: none;
+}
+
+
+
+@media screen and (max-width:973px) {
+    .navdivChild-Child {
+        display: none;
+    }
+
+    .fa-user {
+        display: none;
+    }
+
+    .fa-bars {
+        display: flex;
+        padding-left: 15px;
+    }
+
+    .navdiv,
+    .navdiv1 {
+        width: 20%;
+    }
+
+    .navdivChild {
+        width: 50%;
+    }
+
+    .cartBoxChild {
+        width: 100%;
+    }
+
+
+
+    #mainPage {
+        width: 100px;
+    }
+
+}
+.footerDiv div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.5);
+    line-height: 25px;
+}
+
+.footerDiv div p {
+    line-height: 25px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.footerDiv div h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+
+
+.footerDiv div li a {
+    transition-duration: 1s;
+    transition-property: color;
+}
+
+.footerDiv div li a:hover {
+    color: #8bc34a;
+}
+
+.quickLinks li a {
+    color: #8bc34a;
+}
+
+.footerDiv2 div h4 {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.footerDiv2 div li {
+    display: inline-flex;
+}
+
+.footerDiv2 div li a {
+    display: inline-flex;
+    color: rgb(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 1s;
+    transition-property: color;
+}
+
+.footerDiv2 div li a:hover {
+    color: #8bc34a;
+}
+
+.footerDiv2 {
+    border-width: 1px;
+    border-top-color: rgb(255, 255, 255, 0.5);
+
+    
+    border-style: solid;
+}
+.quickLinksParent2{
+   display: flex; 
+   flex-direction: column;
+    justify-content:flex-start;
+}
+.quickLinksParent1{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1017px) {
+        .footerDiv {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .footerDiv div{
+            width: 100%;
+        }
+        .quickLinksParent1 div{
+            
+            width: 100%;
+        }
+        .quickLinksParent2 div{
+            width: 100%;
+        }
+        .quickLinksParent1,.quickLinksParent2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            text-align:center;
+        }
+        .quickLinksParent1 h1,.quickLinkParent2 div h1{
+            text-align: center;
+        }
+        
+        
+    }
